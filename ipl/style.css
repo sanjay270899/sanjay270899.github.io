@@ -49,6 +49,20 @@ table tr:hover{
     background-color: var(--ipl-color4);
 }
 
+.win{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.loss{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 3px;
+}
+
 footer{
     background-color: black;
     color: white;
