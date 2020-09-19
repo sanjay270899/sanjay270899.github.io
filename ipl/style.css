@@ -1,0 +1,74 @@
+/********************************* Variables *********************************/
+
+:root{
+    --ipl-color: #1B448F;
+    --ipl-color2: #1A3E8C;
+    --ipl-color3: #D9E1F2;
+    --ipl-color4: #c2d0f0;
+}
+
+/********************************* Styles *********************************/
+
+body{
+    margin: 0px;
+}
+
+#title{
+    background-color: var(--ipl-color);
+    color: white;
+    margin: 0px;
+    padding: 10px 5px;
+}
+
+#table-container{
+    width: fit-content;
+    margin: 15px auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: var(--ipl-color2);
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table tr:nth-child(even){
+    background-color: var(--ipl-color3);
+}
+
+table tr:hover{
+    background-color: var(--ipl-color4);
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    margin: 0px;
+    padding: 10px 5px;
+}
+
+#sanjay{
+    background-color: orange;
+    color: black;
+    padding: 0px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/********************************* Utility classes *********************************/
+
+.text-center{
+    text-align: center;
+}
