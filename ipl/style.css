@@ -29,16 +29,19 @@ body{
 /* table container */
 #table-container{
     display: flex;
+    justify-content: space-evenly;
+    margin: 15px 8px;
 }
 
 table{
     border-collapse: collapse;
+    text-align: center;
 }
 
 /* table points */
-#table-container-points{
-    width: fit-content;
-    margin: 15px auto;
+#table-container-points table{
+    margin-bottom: 15px;
+    width: 100%;
 }
 
 #table-container-points th{
@@ -66,11 +69,6 @@ table{
 }
 
 /* table extra */
-#table-container-extra{
-    width: fit-content;
-    margin: 15px auto;
-}
-
 #table-container-extra table{
     margin-bottom: 15px;
     width: 100%;
@@ -102,8 +100,7 @@ table{
 
 /* table schedule */
 #table-container-schedule{
-    width: fit-content;
-    margin: 15px 15px;
+    margin-bottom: 15px;
 }
 
 #table-container-schedule table th{
@@ -162,6 +159,40 @@ footer p{
     padding: 0px 5px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 375px)
+{
+    #table-container{
+        flex-direction: column;
+        font-size: 0.7rem;
+    }
+
+    #table-container-schedule{
+        order: 1;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px)
+{
+    #table-container{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    #table-container-schedule{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        order: 1;
+    }
+}
+
+@media only screen and (min-width: 768.0001px)
+{
+    #table-container-schedule{
+        margin: 0px 11px;
+    }
 }
 
 /********************************* Utility classes *********************************/
