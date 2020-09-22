@@ -3,16 +3,22 @@
 :root{
     --ipl-color: #1B448F;
     --ipl-color2: #1A3E8C;
-    --ipl-color3: #D9E1F2;
-    --ipl-color4: #c2d0f0;
+    
+    --ipl-hover: #c2d0f0;
+    --ipl-table-even: #D9E1F2;
+    --ipl-table-odd: white;
 }
 
 /********************************* Styles *********************************/
 
 body{
     margin: 0px;
+    background-image: url(https://www.stockvault.net/data/2012/05/02/130583/preview16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* title */
 #title{
     background-color: var(--ipl-color);
     color: white;
@@ -20,49 +26,126 @@ body{
     padding: 10px 5px;
 }
 
+/* table container */
 #table-container{
-    width: fit-content;
-    margin: 15px auto;
+    display: flex;
 }
 
 table{
     border-collapse: collapse;
 }
 
-table th{
+/* table points */
+#table-container-points{
+    width: fit-content;
+    margin: 15px auto;
+}
+
+#table-container-points th{
     background-color: var(--ipl-color2);
     color: white;
     padding: 10px;
     border: 1px solid white;
 }
 
-table td{
+#table-container-points table td{
     border: 1px solid black;
     padding: 10px;
 }
 
-table tr:nth-child(even){
-    background-color: var(--ipl-color3);
+#table-container-points table tr:nth-child(even){
+    background-color: var(--ipl-table-even);
 }
 
-table tr:hover{
-    background-color: var(--ipl-color4);
+#table-container-points table tr:nth-child(odd){
+    background-color: var(--ipl-table-odd);
 }
 
+#table-container-points table tr:hover{
+    background-color: var(--ipl-hover);
+}
+
+/* table extra */
+#table-container-extra{
+    width: fit-content;
+    margin: 15px auto;
+}
+
+#table-container-extra table{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#table-container-extra th{
+    background-color: var(--ipl-color2);
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#table-container-extra table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#table-container-extra table tr:nth-child(even){
+    background-color: var(--ipl-table-even);
+}
+
+#table-container-extra table tr:nth-child(odd){
+    background-color: var(--ipl-table-odd);
+}
+
+#table-container-extra table tr:hover{
+    background-color: var(--ipl-hover);
+}
+
+/* table schedule */
+#table-container-schedule{
+    width: fit-content;
+    margin: 15px 15px;
+}
+
+#table-container-schedule table th{
+    background-color: var(--ipl-color2);
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#table-container-schedule table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#table-container-schedule table tr:nth-child(even){
+    background-color: var(--ipl-table-even);
+}
+
+#table-container-schedule table tr:nth-child(odd){
+    background-color: var(--ipl-table-odd);
+}
+
+#table-container-schedule table tr:hover{
+    background-color: var(--ipl-hover);
+}
+
+/* Win Loss */
 .win{
     color: white;
     background-color: green;
     border-radius: 5px;
-    padding: 3px;
+    padding: 0.5px 3px;
 }
 
 .loss{
     color: white;
     background-color: red;
     border-radius: 5px;
-    padding: 3px;
+    padding: 0.5px 3px;
 }
 
+/* footer */
 footer{
     background-color: black;
     color: white;
