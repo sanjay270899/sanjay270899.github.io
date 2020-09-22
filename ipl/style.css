@@ -84,6 +84,7 @@ table{
 #table-container-extra table td{
     border: 1px solid black;
     padding: 10px;
+    width: 33%;
 }
 
 #table-container-extra table tr:nth-child(even){
@@ -99,8 +100,8 @@ table{
 }
 
 /* table schedule */
-#table-container-schedule{
-    margin-bottom: 15px;
+#table-container-schedule table{
+    width: 100%;
 }
 
 #table-container-schedule table th{
@@ -171,9 +172,13 @@ footer p{
     #table-container-schedule{
         order: 1;
     }
+
+    footer p{
+        font-size: 0.7rem;
+    }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 768px)
+@media only screen and (min-width: 375px) and (max-width: 767.999px)
 {
     #table-container{
         flex-direction: column;
@@ -181,17 +186,15 @@ footer p{
     }
 
     #table-container-schedule{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 15px;
         order: 1;
     }
 }
 
-@media only screen and (min-width: 768.0001px)
+@media only screen and (min-width: 768px)
 {
     #table-container-schedule{
         margin: 0px 11px;
+        box-shadow: 1px 1px 15px black;
     }
 }
 
