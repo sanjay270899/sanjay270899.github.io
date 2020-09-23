@@ -125,7 +125,8 @@ table{
 }
 
 #table-container-schedule table tr:hover{
-    background-color: var(--ipl-hover);
+    transform: scale(1.03);
+    box-shadow: 1px 1px 15px black;
 }
 
 /* Win Loss */
