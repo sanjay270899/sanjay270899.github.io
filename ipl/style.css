@@ -125,7 +125,7 @@ table{
 }
 
 #table-container-schedule table tr:hover{
-    transform: scale(1.03);
+    transform: scale(1.01);
     box-shadow: 1px 1px 15px black;
 }
 
